@@ -20,10 +20,10 @@ Você precisa projetar a câmera sobre este marcador:
 ![Drag Racing](https://jeromeetienne.github.io/AR.js/data/images/HIRO.jpg)
 
 ### ← Veja um GIF breve de como executar a aplicação 
-v1
+- v1
 ![](execucao.gif)
 
-v2
+- v2
 ![](execucao_v2.gif)
 
 ### ← Veja um vídeo breve de como executar a aplicação 
