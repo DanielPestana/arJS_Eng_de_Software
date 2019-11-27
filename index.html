@@ -31,6 +31,10 @@
                     <a-animation attribute="position" dur="5000" from="5 0 0" to="0.78 0 0" repeat="indefinitive"></a-animation>
 
                 </a-entity>
+                
+                <a-text id="text-inicial" width="1.5" value="Bem vindo ao treinamento!\n" color="white" rotation="-70 0 0" position="0 2 0"> </a-text>
+                <a-text id="text-msg" width="1.5" value="Utilize os botoes ao lado para ir passando pelas etapas." color="white" rotation="-90 0 0" position="0 2 0.2"></a-text>
+
                 <!--
           <a-entity
               id="entity-bushes"
@@ -57,12 +61,16 @@
         </a-scene>
         <div id="buttons">
             <div class="background">
-                <button id="btn-step-1" type="button">1ª etapa</button>
-                <button id="btn-step-2" type="button">2ª etapa</button>
-                <button id="btn-step-3" type="button">3ª etapa</button>
-                <button id="btn-step-4" type="button">4ª etapa</button>
+                <button id="btn-step-1" type="button" disabled>1ª etapa</button>
+                <button id="btn-step-2" type="button" disabled>2ª etapa</button>
+                <button id="btn-step-3" type="button" disabled>3ª etapa</button>
+                <button id="btn-step-4" type="button" disabled>4ª etapa</button>
             </div>
-
+        </div>
+        <div id="buttons-bottom">
+          <div class="background-bottom">
+            <button id="btn-next-step" type="button">Iniciar</button>
+          </div>
         </div>
     </body>
 
