@@ -42,7 +42,7 @@ button:hover {
 #buttons-bottom {
   z-index: 99999;
   position: absolute;
-  top: calc(100% - 150px);
+  top: calc(100% - 250px);
   right: 5px;
   width: 30%;
   height: 100%;
@@ -56,10 +56,7 @@ button:hover {
 }
 
 #buttons-bottom .background-bottom button {
-  font-size: 18px;
+  font-weight: bold;
+  font-size: 14px;
   margin: 10px 0px;
-  white-space: normal;
-  border: 5px #426da9 solid;
-  color: #000;
-  background-color: transparent;
 }
