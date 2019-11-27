@@ -40,4 +40,4 @@ Clique aqui para ver o [vídeo](https://github.com/DanielPestana/arJS_Eng_de_Sof
 
 ### ← Abrir a aplicação (Webapp)
 
-Clique aqui para executar o [Webapp](https://bevel-cyclamen.glitch.me/).
+Clique aqui para executar o [Webapp](https://danielpestana-arjs-eng-de-software-1.glitch.me/).
