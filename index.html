@@ -18,22 +18,26 @@
     <body style="margin : 0px; overflow: hidden;">
         <a-scene id="scene1" embedded arjs>
             <a-marker preset="hiro">
-
+                <!-- Parede Vermelha -->
                 <a-entity id="entity-model" collada-model="url(resources/model.dae)" scale=" 0.3 0.3 0.3" rotation="0 90 270" postion="0.5 0.5 0.5"></a-entity>
 
+                <!-- Tripe -->
                 <a-entity id="entity-scene" gltf-model="url(resources/scene.gltf)" position="0.5 -0.9 -0.9" scale="0.1 0.1 0.1" rotation="-90 0 0">
 
-                    <a-animation attribute="position" dur="5000" from="0.5 -0.9 -0.9" to="0.1 -0.9 -0.9" repeat="indefinitive"></a-animation>
+                    <a-animation attribute="position" dur="3000" from="0.5 -0.9 -0.9" to="0.1 -0.9 -0.9" repeat="1"></a-animation>
 
                 </a-entity>
-
-                <a-entity id="entity-drill" position="0 0.5 0" rotation="270 0 0.5" scale="5 5 5" collada-model="url(resources/drill.dae)">
-                    <a-animation attribute="position" dur="5000" from="5 0 0" to="0.78 0 0" repeat="indefinitive"></a-animation>
-
+              
+              <!-- Furadeira -->
+                <a-entity visible="false" id="entity-drill-step-2" position="1.5 0 0" rotation="270 0 0.5" scale="5 5 5" collada-model="url(resources/drill.dae)"></a-entity>
+                
+                <!-- Furadeira -->
+                <a-entity visible="false" id="entity-drill-step-3" position="1.5 0 0" rotation="270 0 0.5" scale="5 5 5" collada-model="url(resources/drill.dae)">
+                    <a-animation id="animation-drill" attribute="position" dur="5000" from="1.5 0 0" to="0.78 0 0" repeat="indefinitive"></a-animation>
                 </a-entity>
                 
-                <a-text id="text-inicial" width="1.5" value="Bem vindo ao treinamento!\n" color="white" rotation="-70 0 0" position="0 2 0"> </a-text>
-                <a-text id="text-msg" width="1.5" value="Utilize os botoes ao lado para ir passando pelas etapas." color="white" rotation="-90 0 0" position="0 2 0.2"></a-text>
+                <!--<a-text id="text-inicial" width="1.5" value="Bem vindo ao treinamento!\n" color="white" rotation="-70 0 0" position="0 2 0"> </a-text>-->
+                <a-text id="text-msg" width="3" value="Posicione o tripe" color="#426da9" rotation="-90 0 0" position="0 2 0"></a-text>
 
                 <!--
           <a-entity
@@ -59,17 +63,11 @@
             <a-entity camera></a-entity>
 
         </a-scene>
-        <div id="buttons">
-            <div class="background">
-                <button id="btn-step-1" type="button" disabled>1ª etapa</button>
-                <button id="btn-step-2" type="button" disabled>2ª etapa</button>
-                <button id="btn-step-3" type="button" disabled>3ª etapa</button>
-                <button id="btn-step-4" type="button" disabled>4ª etapa</button>
-            </div>
-        </div>
         <div id="buttons-bottom">
           <div class="background-bottom">
-            <button id="btn-next-step" type="button">Iniciar</button>
+            <button id="btn-step-1" type="button" disabled>1ª etapa</button>
+            <button id="btn-step-2" type="button">2ª etapa</button>
+            <button id="btn-step-3" type="button">3ª etapa</button>
           </div>
         </div>
     </body>
