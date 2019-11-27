@@ -26,6 +26,9 @@ Você precisa projetar a câmera sobre este marcador:
 - v2  
 ![](execucao_v2.gif)
 
+- v3  
+![](execucao_v3.gif)
+
 ### ← Veja um vídeo breve de como executar a aplicação 
 
 Clique aqui para ver o [vídeo](https://github.com/DanielPestana/arJS_Eng_de_Software).
