@@ -1,32 +1,75 @@
-<!doctype HTML>
-<html>
-<script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
-<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.8/aframe/build/aframe-ar.js"></script>
+<!DOCTYPE html>
+<html lang="en">
 
-<body style='margin : 0px; overflow: hidden;'>
-    <a-scene embedded arjs>
-        <a-marker preset="hiro">
+<head>
+    <meta charset="UTF-8">
+    <title>ARJS</title>
+    <link rel="stylesheet" href="./style.css">
 
-            <a-entity collada-model="url(https://raw.githubusercontent.com/DanielPestana/arJS_Eng_de_Software/master/model.dae)" scale=" 0.3 0.3 0.3" rotation="0 90 270" postion="0.5 0.5 0.5"></a-entity>
+</head>
 
-            <a-entity gltf-model="url(https://raw.githubusercontent.com/yasminaraujoarantes/IHC-ARJS/master/cylinder_reduced_head_rivet_nut/scene.gltf)" position="0.5 -0.9 -0.9" scale="0.1 0.1 0.1" rotation="-90 0 0">
+<body>
+    <!-- partial:index.partial.html -->
+    <!doctype HTML>
+    <html>
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.7.8/aframe/build/aframe-ar.js"></script>
 
-                <a-animation attribute="position" dur="5000" from="0.5 -0.9 -0.9" to="0.1 -0.9 -0.9" repeat="indefinitive"></a-animation>
+    <body style="margin : 0px; overflow: hidden;">
+        <a-scene id="scene1" embedded arjs>
+            <a-marker preset="hiro">
 
-            </a-entity>
+                <a-entity id="entity-model" collada-model="url(resources/model.dae)" scale=" 0.3 0.3 0.3" rotation="0 90 270" postion="0.5 0.5 0.5"></a-entity>
 
-            <a-entity position='0 0.5 0' rotation="270 0 0.5" scale='5 5 5' collada-model="url(https://bitbucket.org/fateccodes/drill-arjs/raw/478a8597262ad2cbd83422ef391307c77a04aac0/model/drill.dae)">
-                <a-animation attribute="position" dur="5000" from="5 0 0" to="0.78 0 0" repeat="indefinitive"></a-animation>
+                <a-entity id="entity-scene" gltf-model="url(resources/scene.gltf)" position="0.5 -0.9 -0.9" scale="0.1 0.1 0.1" rotation="-90 0 0">
 
-            </a-entity>
+                    <a-animation attribute="position" dur="5000" from="0.5 -0.9 -0.9" to="0.1 -0.9 -0.9" repeat="indefinitive"></a-animation>
 
-            <a-entity collada-model="url(https://raw.githubusercontent.com/DanielPestana/arJS_Eng_de_Software/master/bushes.dae)" scale="1 1 1" position="6 0.5 0" rotation="0.5 0.5 0.5">
-                <a-animation attribute="position" dur="3000" from="2 0 0" to="1 0 0" repeat="indefinitive"></a-animation>
-            </a-entity>
+                </a-entity>
 
-        </a-marker>
-        <a-entity camera></a-entity>
-    </a-scene>
+                <a-entity id="entity-drill" position="0 0.5 0" rotation="270 0 0.5" scale="5 5 5" collada-model="url(resources/drill.dae)">
+                    <a-animation attribute="position" dur="5000" from="5 0 0" to="0.78 0 0" repeat="indefinitive"></a-animation>
+
+                </a-entity>
+                <!--
+          <a-entity
+              id="entity-bushes"
+              collada-model="url(https://raw.githubusercontent.com/DanielPestana/arJS_Eng_de_Software/master/bushes.dae)"
+              scale="1 1 1"
+              position="6 0.5 0"
+              rotation="0.5 0.5 0.5"
+              animation="startEvents:rotation-begin; pauseEvents: rotation-pause; resumeEvents: rotation-resume;attribute:position; dur:3000; from:2 0 0; to: 1 0 0; repeat: indefinitive;"
+              >
+
+          <a-animation
+                  attribute="position"
+                  dur="3000"
+                  from="2 0 0"
+                  to="1 0 0"
+                  repeat="indefinitive"
+          ></a-animation>
+
+      </a-entity>
+ -->
+            </a-marker>
+            <a-entity camera></a-entity>
+
+        </a-scene>
+        <div id="buttons">
+            <div class="background">
+                <button id="btn-step-1" type="button">1ª etapa</button>
+                <button id="btn-step-2" type="button">2ª etapa</button>
+                <button id="btn-step-3" type="button">3ª etapa</button>
+                <button id="btn-step-4" type="button">4ª etapa</button>
+            </div>
+
+        </div>
+    </body>
+
+    </html>
+    <!-- partial -->
+    <script src="./script.js"></script>
+
 </body>
 
 </html>
