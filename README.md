@@ -2,9 +2,9 @@
 
 Projeto feito na disciplina (Interação Humano Computador - curso de ADS 3° Semestre) pelos alunos:
 
- - Adrian Wesley Vieira da Silva
- - Daniel Leonard Levi Pestana
- - Caíque Fernandes
+ - Adrian Wesley Vieira da Silva (adrianwesley11@gmail.com)
+ - Daniel Leonard Levi Pestana (daniel.pestana.99@outlook.com)
+ - Caíque Fernandes (caiiqe.fernandes@hotmail.com)
 
 Professor Giuliano Bertoti
 
